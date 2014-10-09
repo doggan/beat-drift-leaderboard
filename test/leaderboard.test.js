@@ -3,16 +3,14 @@
 /*global describe, it, before*/
 
 var expect = require('chai').expect,
-    async = require('async'),
-    Leaderboard = require('./../lib/api/v0/leaderboard');
+    async = require('async');
 
-var lb = new Leaderboard('test_leaderboard_0');
+var lb = require('./../lib/api/v0/index').TEST_LEADERBOARD;
 
 describe('leaderboard', function() {
     var entryIds = {};
 
     before(function(done) {
-        // TODO:
         lb.client.flushdb(function() {
             async.series([
                 function(cb) {

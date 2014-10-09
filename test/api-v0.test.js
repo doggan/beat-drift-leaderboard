@@ -58,7 +58,7 @@ describe('api-v0', function() {
         done();
     });
 
-    var LEADERBOARD_ID = "test_leaderboard_0";
+    var LEADERBOARD_ID = require('./../lib/api/v0/index').TEST_LEADERBOARD_ID;
 
     describe('GET - /leaderboards/:leaderboardId', function() {
         var MAX_SCORE = 20;
