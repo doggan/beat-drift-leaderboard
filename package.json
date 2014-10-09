@@ -1,0 +1,28 @@
+{
+  "name": "leaderboard-server",
+  "version": "0.0.0",
+  "private": true,
+  "description": "An online leaderboard server.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "node_modules/.bin/mocha"
+  },
+  "author": "Shyam Guthikonda",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^0.9.0",
+    "express": "^4.9.5",
+    "lodash": "^2.4.1",
+    "redis": "^0.12.1"
+  },
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "mocha": "^1.21.4",
+    "request": "^2.45.0"
+  },
+  "jshintConfig": {
+    "node": true,
+    "unused": true
+  }
+}
