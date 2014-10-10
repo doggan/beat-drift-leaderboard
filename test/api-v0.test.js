@@ -162,6 +162,8 @@ describe('api-v0', function() {
                 expect(rankings[0].score).to.equal(5);
                 expect(rankings[0].rank).to.equal(0);
 
+                expect(body.totalCount).to.equal(1);
+
                 done();
             });
         });
@@ -206,6 +208,8 @@ describe('api-v0', function() {
                         expect(rankings[1].name).to.equal('Mr. C');
                         expect(rankings[1].score).to.equal(15);
                         expect(rankings[1].rank).to.equal(1);
+
+                        expect(body.totalCount).to.equal(3);
 
                         cb();
                     });
