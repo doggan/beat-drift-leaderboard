@@ -1,0 +1,230 @@
+/*
+ * -- BASE STYLES --
+ */
+body {
+    background-color: #000000;
+    color: #8da4ae;
+}
+
+h2, h3 {
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+/*
+ * -- Layout Styles --
+ */
+.l-content {
+    margin: 0 auto;
+}
+
+.l-box {
+    padding: 0.5em 2em;
+}
+
+/* Top bar. */
+
+#top-bar {
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    text-align: right;
+    width: 100%;
+    background-color: #000000;
+    /*z-index: 1000;*/
+
+    padding: 5px;
+    height: 90px;
+}
+
+#logo {
+    padding: 10px;
+    float: left;
+}
+
+#store-div {
+    float:right;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+#full-version {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#itunes_store_btn_picture,
+#google_store_btn_picture,
+#windows_store_btn_picture,
+#ouya_store_btn_picture {
+    height: 38px;
+    padding: 2px;
+}
+
+/* Content */
+#unityPlayer {
+    padding-top: 20px;
+    margin: auto;
+    text-align: center
+}
+
+/*
+ * Leaderboard boxes.
+ */
+.leaderboard-box-header {
+    /*border-left: 1px solid #ddd;*/
+}
+
+.leaderboard-boxes {
+    max-width: 980px;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.leaderboard-box {
+    margin: 0 0.5em 2em;
+}
+
+/*
+ * Leaderboard box headers.
+ */
+.leaderboard-box-header {
+    background: #111;
+    color: #fff;
+}
+    .leaderboard-box-header h2 {
+        margin: 0;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        font-size: 1em;
+        font-weight: normal;
+    }
+
+.leaderboard-box-genesis .leaderboard-box-header {
+    background: #ff1a32;
+}
+
+.leaderboard-box-awaken .leaderboard-box-header {
+    background: #42dc42;
+}
+
+.leaderboard-box-flare .leaderboard-box-header {
+    background: #29abcf;
+}
+
+/*
+ * Leaderboard tables.
+ */
+.leaderboard-table {
+    margin: 0 auto;
+    width: 100%;
+
+    table-layout: fixed;
+}
+
+.leaderboard-rank-cell {
+    text-align: left;
+
+    /* Reduce the width of the rank cell,
+        since we know it will only go up to 10.*/
+    width: 1px;
+}
+
+.leaderboard-name-cell {
+    text-align: left;
+}
+
+.leaderboard-score-cell {
+    text-align: right;
+}
+
+.leaderboard-nodata-text {
+
+}
+
+.table-even {
+    background-color: #2f3540   ;
+}
+
+.table-odd {
+    background-color: #181b21   ;
+}
+
+.recent-info-content {
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+    margin: auto;
+    width: 500px;
+    text-align: center;
+}
+
+#recent-user-score {
+
+}
+
+/* Footer. */
+
+.footer {
+    background: #000000;
+    text-align: center;
+}
+    .footer a {
+        color: #ddd;
+    }
+
+#lpg-image {
+    float: left;
+}
+
+#digitaluzu-image {
+    float: right;
+}
+
+#top-nav {
+    padding-top:12px;
+}
+
+
+/* Positioning for smaller screens. */
+
+@media (max-width: 700px){
+    #logo {
+        float: none;
+        text-align: center;
+    }
+    #store-div {
+        float: none;
+        text-align: center;
+        padding: 0px;
+    }
+
+    #top-bar {
+        height: 165px;
+    }
+
+    #unityPlayer {
+        padding-top: 185px;
+    }
+
+    #lpg-image {
+        float: none;
+        text-align: center;
+    }
+
+    #digitaluzu-image {
+        float: none;
+        text-align: center;
+    }
+
+    #top-nav {
+        padding-top:0px;
+    }
+}
